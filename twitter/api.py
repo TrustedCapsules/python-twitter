@@ -2954,7 +2954,7 @@ class Api(object):
         Returns:
           A sequence of twitter.DirectMessage instances
         """
-        url = '%s/direct_messages.json' % self.base_url
+        url = '%s/direct_messages/events/list.json' % self.base_url
         parameters = {
             'full_text': bool(full_text),
             'include_entities': bool(include_entities),
